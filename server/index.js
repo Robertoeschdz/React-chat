@@ -10,7 +10,7 @@ const app = express()
 const server = http.createServer(app)
 const io = new SocketServer(server, {
     cors: {
-        origin: 'http://localhost:5173',
+        origin: 'https://robertoeschz.web.app/',
     }
 })
 
@@ -27,6 +27,6 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(PORT, () => {
+server.listen(PORT, '192.168.1.66', () => {
     console.log('Server on port', PORT)
 })
