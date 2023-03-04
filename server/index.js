@@ -27,6 +27,6 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(PORT, '192.168.1.66', () => {
+server.listen(PORT, () => {
     console.log('Server on port', PORT)
 })
